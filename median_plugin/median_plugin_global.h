@@ -1,0 +1,12 @@
+#ifndef MEDIAN_PLUGIN_GLOBAL_H
+#define MEDIAN_PLUGIN_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(MEDIAN_PLUGIN_LIBRARY)
+#  define MEDIAN_PLUGIN_EXPORT Q_DECL_EXPORT
+#else
+#  define MEDIAN_PLUGIN_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // MEDIAN_PLUGIN_GLOBAL_H
